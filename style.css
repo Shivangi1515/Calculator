@@ -1,0 +1,104 @@
+/* ✨ Gradient Background with Soft Blur */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: radial-gradient(circle at center, #1a2a6c, #441b5b, #e01f56);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* 🧊 Glassmorphism Calculator */
+.calculator {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border-radius: 30px;
+  padding: 25px;
+  width: 320px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+}
+
+/* 🖥 Display */
+#display {
+  width: 100%;
+  height: 60px;
+  font-size: 2.4rem;
+  padding: 15px;
+  border: none;
+  border-radius: 18px;
+  text-align: right;
+  background: #1f1f2e;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* 🔢 Button Grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  justify-items: center; /* Align buttons center in each grid cell */
+}
+/* 🔘 Default Buttons */
+button {
+  width: 60px;
+  height: 60px;
+  font-size: 1.2rem;
+  border-radius: 50%; /* Makes it a circle */
+  border: none;
+  background: #2b2c3b;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(1.05);
+}
+
+/* 🟠 Equal Button */
+/* Remove span for zero, make it just another circular button */
+.zero {
+  grid-column: span 1;
+}
+
+/* Keep equal button colored but not stretched */
+.equal {
+  background: #ff5722;
+  color: white;
+}
+
+.equal:hover {
+  background: #ff7043;
+}
+
+/* 📱 Mobile Responsive */
+/* 📱 Mobile Responsive Fixes */
+@media (max-width: 400px) {
+  .calculator {
+    padding: 15px;
+    max-width: 95%;
+  }
+
+  .buttons {
+    gap: 12px; /* reduce spacing between buttons */
+  }
+
+  button {
+    max-width: 60px;         /* smaller buttons */
+    font-size: 1rem;
+  }
+
+  #display {
+    font-size: 1.5rem;
+    height: 50px;
+  }
+}
