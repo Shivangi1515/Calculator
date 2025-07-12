@@ -1,4 +1,4 @@
-/* ✨ Gradient Background with Soft Blur */
+
 body {
   margin: 0;
   padding: 0;
@@ -11,7 +11,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* 🧊 Glassmorphism Calculator */
+
 .calculator {
   background: rgba(255, 255, 255, 0.06);
   backdrop-filter: blur(30px);
@@ -36,14 +36,14 @@ body {
   margin-bottom: 20px;
 }
 
-/* 🔢 Button Grid */
+
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 18px;
   justify-items: center; /* Align buttons center in each grid cell */
 }
-/* 🔘 Default Buttons */
+
 button {
   width: 60px;
   height: 60px;
@@ -70,7 +70,7 @@ button:hover {
   grid-column: span 1;
 }
 
-/* Keep equal button colored but not stretched */
+
 .equal {
   background: #ff5722;
   color: white;
@@ -80,8 +80,7 @@ button:hover {
   background: #ff7043;
 }
 
-/* 📱 Mobile Responsive */
-/* 📱 Mobile Responsive Fixes */
+
 @media (max-width: 400px) {
   .calculator {
     padding: 15px;
@@ -89,11 +88,11 @@ button:hover {
   }
 
   .buttons {
-    gap: 12px; /* reduce spacing between buttons */
+    gap: 12px; 
   }
 
   button {
-    max-width: 60px;         /* smaller buttons */
+    max-width: 60px;         
     font-size: 1rem;
   }
 
